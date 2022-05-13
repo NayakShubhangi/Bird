@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>Bird Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="Logout();">Logout
+</button>
+	<center>
+		<h1 class="header">	
+			Bird	
+			<sup>
+				<img src="m2.png">
+			</sup>
+		</h1>
+		<h3 class="color_white" id="user_name">Welcome 
+		</h3>
+		<div class="form-group input_div_room_page">
+			<label>Add Room:
+			</label>
+			<input type="text" id="room_name" class="form-control" placeholder="Room Name">
+
+		</div>
+		<button class="btn btn-info" onclick="AddRoom();">Add Room</button>
+		<h3 class="color_white">TRENDING ROOMS</h3>
+		<div id="output">
+			<div class="room_name" id="amongusSUS" onclick="redirectRoomName(this.id)">#AmongUs=SUS
+			</div>
+			<hr>
+			<div class="room_name" id="pokemon" onclick="redirectToRoomName(this.id)">#POKEMON
+			</div>
+			<hr>
+			<div class="room_name" id="1498AMONGUS" onclick="redirectRoomName(this.id)">#1498AMONGUS
+			</div>
+			<hr>
+			<div class="room_name" id="2739_COOL" onclick="redirectRoomName(this.id)">#2739_cool-people
+			</div>
+			<hr>
+			<div class="room_name" id="3938_SMART" onclick="redirectRoomName(this.id)">#3938_smart-people
+			</div>
+			<hr>
+			<div class="room_name" id="#JOIN_IF_ARE_BORED" onclick="redirectRoomName(this.id)">#JOIN_IF_YOU_ARE_BORED
+			</div>
+			<hr>
+			<div class="room_name" id="secret_code_here" onclick="redirectRoomName(this.id)">#SECRET CODE HERE(totally)
+			</div>
+			<hr>
+			<div class="room_name" id="the-trendiest" onclick="redirectRoomName(this.id)">#The_trendiest_of_ALL_TIME
+			</div>
+			<hr>
+			<div class="room_name" id="sussy" onclick="redirectRoomName(this.id)">#sussy
+			</div>
+			<hr>
+			<div class="room_name" id="amongus" onclick="redirectRoomName(this.id)">#AmongUS
+			</div>
+			<hr>
+			<div class="room_name" id="secret_code_required" onclick="redirectRoomName(this.id)">#Secret_Code_Required_to_JOIN
+			</div>
+			<hr>
+			<div class="room_name" id="good_peple_only" onclick="redirectRoomName(this.id)">#Good_Peple_ONLY(MUST HAVE JOINED: Secret_Code_Required_to_JOIN)
+			</div>
+			<hr>
+			<div class="room_name" id="do_you_like_grapes" onclick="redirectRoomName(this.id)">#JOIN IF YOU LIKE GRAPES
+			</div>
+		</div>
+	</center>
+</div>
+<script src="bird_room.js"></script>
+</body>
+</html>
